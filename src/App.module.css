@@ -1,0 +1,21 @@
+
+body {
+    height: 100vh;
+    background-color: #3D3B40;
+    color: #243763;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  h1{
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #BFCFE7;
+    border-radius: 14px;
+  }

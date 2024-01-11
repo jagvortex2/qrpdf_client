@@ -1,0 +1,56 @@
+/* QRCodeForm.module.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 15px; /* Add rounded corners to the container */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow effect */
+}
+
+.heading {
+  text-align: center;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px; /* Increase margin between labels */
+  font-weight: bold;
+  color: #333; /* Label text color */
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 50px; /* Add rounded corners to input and select */
+  border: 0; /*1px solid #511212;*/
+  margin-bottom: 15px; /* Increase margin between input and select */
+}
+
+.input {
+  width: 95%;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #525CEB;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px; /* Add rounded corners to the button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow effect */
+  margin-top: 15px; /* Increase margin between button and input/select */
+}
+
+.button:hover {
+  background-color: #3a47d5; /* Change background color on hover */
+}
