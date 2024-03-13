@@ -3,10 +3,11 @@
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 5%;
   background-color: #f0f0f0;
-  border-radius: 15px; /* Add rounded corners to the container */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow effect */
+  border-radius: 8px; /* Add rounded corners to the container */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* Add a subtle box shadow effect */
+  border: 2px solid ;
 }
 
 .heading {
@@ -15,13 +16,19 @@
 
 .form {
   margin-bottom: 20px;
+  
 }
 
 .label {
   display: block;
-  margin-bottom: 10px; /* Increase margin between labels */
+  margin-bottom: 8%; /* Increase margin between labels */
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
-  color: #333; /* Label text color */
+  color: #9195f6; /* #333 Label text color */
+  
+ 
+  
 }
 
 .input,
@@ -30,27 +37,60 @@
   padding: 12px;
   font-size: 14px;
   border-radius: 50px; /* Add rounded corners to input and select */
-  border: 0; /*1px solid #511212;*/
-  margin-bottom: 15px; /* Increase margin between input and select */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* Add a subtle box shadow effect */
+  border: 2px solid /*#000*/; /*1px solid #511212;*/
+  margin-top: 10px; /* Increase margin between input and select */
+}
+
+.select{
+  width: 100%;
+  background-color: #fff;
+  color:#030637;
 }
 
 .input {
-  width: 95%;
+  border: 2px solid #243763;
+  width: 92.5%;
 }
 
-.button {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  background-color: #525CEB;
-  color: white;
+
+.button{
+  width: 40%;
+ margin-left: 30%;
+  outline: 0;
+  grid-gap: 8px;
+  align-items: center;
+  background-color: #ff90e8;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 500px;
   cursor: pointer;
-  border: none;
-  border-radius: 50px; /* Add rounded corners to the button */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow effect */
+  display: inline-flex;
+  flex-shrink: inherit;
+  font-size: 0.85rem;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .14s ease-out;
+  white-space: nowrap;
   margin-top: 15px; /* Increase margin between button and input/select */
 }
 
-.button:hover {
-  background-color: #3a47d5; /* Change background color on hover */
+  button:hover {
+      box-shadow: 7px 7px 0 #000;
+      transform: translate(-6px,-6px);
+  }
+  button:focus-visible{
+      outline-offset: 2px;
+  }
+
+
+  @media only screen and (max-width:600px){
+.button{
+  font-size: 2vw;
 }
+  }
